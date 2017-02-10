@@ -92,11 +92,11 @@ $c-pink: #e577aa;
     transform: translate(-50%, 0);
     margin: 0;
 
-    &:hover {font-size: 2rem;}
-
     > * + * {
     border-top: 0.15rem solid $c-babyblue;
     }
+
+    display: none;
   }
 }
 
@@ -111,6 +111,7 @@ $c-pink: #e577aa;
 &--blue {color: $c-blue;}
 &--yellow {color: $c-yellow;}
 
+  :hover {font-size: 2rem;}
 }
 
 .size {
@@ -118,6 +119,8 @@ $c-pink: #e577aa;
   padding: 0;
   margin: .1rem;
 }
+
+.dropdown:hover .dropdown__list {display: flex;}
 
 
 //@import 'mobile';
