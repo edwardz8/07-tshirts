@@ -1,10 +1,16 @@
 // @import 'yoga-sass/assets/yoga';
 // @import 'normalize-css/normalize';
 
-// $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
+$fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 @import 'font-awesome/scss/font-awesome';
 @import 'box-sizing';
 @import 'resets';
+
+$c-babyblue: #72bbe9;
+$c-blue: #3473b5;
+$c-white: #fff;
+$c-green: #7abe93;
+$c-yellow: #e5b178;
 
 
 .grid {
@@ -23,10 +29,7 @@
 }
 
 .shop-card {
-    border: solid 2px #72bbe9;
-    margin: 1;
-    padding: 0;
-    max-width: 12rem;
+    border: solid 2px $c-babyblue;
     position: relative;
     flex-wrap: wrap;
 
@@ -42,13 +45,58 @@
 
   &__title , &__description {
     text-align: center;
-    color: #72bbe9;
+    color: $c-babyblue;
     position: relative;
   }
 
   &__options {
     position: relative;
     justify-content: row;
-    border-top: solid .2rem #72bbe9;
   }
 }
+
+.button-bar {
+        display: flex;
+        height: 2rem;
+        border-top: 0.15rem solid $c-babyblue;
+
+  &__button {
+  flex-grow: 1;
+  border: 0;
+  background: none;
+  color: $c-babyblue;
+}
+
+> * + * {
+  //border-left: 0.15rem solid $c-babyblue;
+}
+
+//.dropdown {
+  position: relative;
+
+// &__list {
+    position: absolute;
+    justify-content: center;
+    flex-direction: column;
+//  }
+
+//  &__button {
+//    &--pink {
+      // color:
+//    }
+
+//    &--green {
+      // color:
+//  }
+
+//    &--blue {
+      // color:
+//    }
+
+//    &--yellow {
+      // color:
+
+}
+
+
+//&__button:hover {}
