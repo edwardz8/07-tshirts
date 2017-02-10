@@ -19,7 +19,6 @@ $c-pink: #e577aa;
   margin: 0;
 
   &__item {
-    margin: 0;
     padding: 1rem;
     flex-basis: calc(100% / 3 - 2rem - 2rem);
     display: flex;
@@ -29,7 +28,7 @@ $c-pink: #e577aa;
 }
 
 .shop-card {
-  border: solid 2px $c-babyblue;
+  border: solid 2px $c-blue;
   position: relative;
   flex-wrap: wrap;
 
@@ -42,8 +41,7 @@ $c-pink: #e577aa;
     position: relative;
   }
 
-  &__description,
-  &__title {
+  &__description, &__title {
     text-align: center;
     color: $c-babyblue;
     position: relative;
@@ -58,7 +56,7 @@ $c-pink: #e577aa;
 .button-bar {
   display: flex;
   height: 2rem;
-  border-top: 0.15rem solid $c-babyblue;
+  border-top: 0.15rem solid $c-blue;
 
   &__button {
     flex-grow: 1;
@@ -68,13 +66,14 @@ $c-pink: #e577aa;
   }
 
   &:hover {
-    color: $c-white;
+  background: $c-blue;
   }
-}
 
   > * + * {
-    border-left: 0.15rem solid $c-babyblue;
+    border-left: 0.15rem solid $c-blue;
   }
+
+}
 
 
 .dropdown {
@@ -82,29 +81,38 @@ $c-pink: #e577aa;
 
   &__list {
     display: flex;
+    padding: 1rem;
     position: absolute;
     bottom: 100%;
     left: 50%;
     flex-direction: column;
-    border: 0.15rem solid $c-babyblue;
+    border: 0.15rem solid $c-blue;
     background: $c-white;
-    //display: none;
     color: $c-blue;
     transform: translate(-50%, 0);
+    margin: 0;
+    display: none;
 
     > * + * {
-      border-top: 0.15rem solid $c-blue;
+    border-top: 0.15rem solid $c-babyblue;
     }
   }
 }
 
 .dropdown__button {
   position: relative;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
+  margin: 0;
 
 &--green {color: $c-green;}
 &--pink {color: $c-pink;}
 &--blue {color: $c-blue;}
 &--yellow {color: $c-yellow;}
 
+}
+
+.size {
+  font-size: 1rem;
+  padding: 0;
+  margin: .1rem;
 }
