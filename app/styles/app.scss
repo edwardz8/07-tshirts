@@ -5,6 +5,7 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 @import 'font-awesome/scss/font-awesome';
 @import 'box-sizing';
 @import 'resets';
+@import 'media';
 
 $c-babyblue: #72bbe9;
 $c-blue: #3473b5;
@@ -63,16 +64,15 @@ $c-pink: #e577aa;
     border: 0;
     background: none;
     color: $c-babyblue;
-  }
 
-  &:hover {
-  background: $c-blue;
+    &:hover {
+    background: $c-blue;
+    }
   }
 
   > * + * {
     border-left: 0.15rem solid $c-blue;
   }
-
 }
 
 
@@ -81,7 +81,7 @@ $c-pink: #e577aa;
 
   &__list {
     display: flex;
-    padding: 1rem;
+    padding: 0;
     position: absolute;
     bottom: 100%;
     left: 50%;
@@ -91,7 +91,8 @@ $c-pink: #e577aa;
     color: $c-blue;
     transform: translate(-50%, 0);
     margin: 0;
-    display: none;
+
+    &:hover {font-size: 2rem;}
 
     > * + * {
     border-top: 0.15rem solid $c-babyblue;
@@ -101,8 +102,9 @@ $c-pink: #e577aa;
 
 .dropdown__button {
   position: relative;
-  font-size: 1.3rem;
+  font-size: 1rem;
   margin: 0;
+  padding: 1rem;
 
 &--green {color: $c-green;}
 &--pink {color: $c-pink;}
@@ -116,3 +118,6 @@ $c-pink: #e577aa;
   padding: 0;
   margin: .1rem;
 }
+
+
+//@import 'mobile';
