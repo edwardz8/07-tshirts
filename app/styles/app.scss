@@ -11,6 +11,7 @@ $c-blue: #3473b5;
 $c-white: #fff;
 $c-green: #7abe93;
 $c-yellow: #e5b178;
+$c-pink: #e577aa;
 
 .grid {
   display: flex;
@@ -67,7 +68,6 @@ $c-yellow: #e5b178;
   }
 
   &:hover {
-    background-color: $c-babyblue;
     color: $c-white;
   }
 }
@@ -88,7 +88,7 @@ $c-yellow: #e5b178;
     flex-direction: column;
     border: 0.15rem solid $c-babyblue;
     background: $c-white;
-    display: none;
+    //display: none;
     color: $c-blue;
     transform: translate(-50%, 0);
 
@@ -102,5 +102,9 @@ $c-yellow: #e5b178;
   position: relative;
   font-size: 1.5rem;
 
+&--green {color: $c-green;}
+&--pink {color: $c-pink;}
+&--blue {color: $c-blue;}
+&--yellow {color: $c-yellow;}
 
 }
