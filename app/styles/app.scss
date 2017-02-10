@@ -12,7 +12,6 @@ $c-white: #fff;
 $c-green: #7abe93;
 $c-yellow: #e5b178;
 
-
 .grid {
   display: flex;
   flex-wrap: wrap;
@@ -29,10 +28,9 @@ $c-yellow: #e5b178;
 }
 
 .shop-card {
-    border: solid 2px $c-babyblue;
-    position: relative;
-    flex-wrap: wrap;
-
+  border: solid 2px $c-babyblue;
+  position: relative;
+  flex-wrap: wrap;
 
   &__pic {
     position: relative;
@@ -43,7 +41,8 @@ $c-yellow: #e5b178;
     position: relative;
   }
 
-  &__title , &__description {
+  &__description,
+  &__title {
     text-align: center;
     color: $c-babyblue;
     position: relative;
@@ -56,47 +55,52 @@ $c-yellow: #e5b178;
 }
 
 .button-bar {
-        display: flex;
-        height: 2rem;
-        border-top: 0.15rem solid $c-babyblue;
+  display: flex;
+  height: 2rem;
+  border-top: 0.15rem solid $c-babyblue;
 
   &__button {
-  flex-grow: 1;
-  border: 0;
-  background: none;
-  color: $c-babyblue;
+    flex-grow: 1;
+    border: 0;
+    background: none;
+    color: $c-babyblue;
+  }
+
+  &:hover {
+    background-color: $c-babyblue;
+    color: $c-white;
+  }
 }
 
-> * + * {
-  //border-left: 0.15rem solid $c-babyblue;
-}
+  > * + * {
+    border-left: 0.15rem solid $c-babyblue;
+  }
 
-//.dropdown {
+
+.dropdown {
   position: relative;
 
-// &__list {
+  &__list {
+    display: flex;
     position: absolute;
-    justify-content: center;
+    bottom: 100%;
+    left: 50%;
     flex-direction: column;
-//  }
+    border: 0.15rem solid $c-babyblue;
+    background: $c-white;
+    display: none;
+    color: $c-blue;
+    transform: translate(-50%, 0);
 
-//  &__button {
-//    &--pink {
-      // color:
-//    }
-
-//    &--green {
-      // color:
-//  }
-
-//    &--blue {
-      // color:
-//    }
-
-//    &--yellow {
-      // color:
-
+    > * + * {
+      border-top: 0.15rem solid $c-blue;
+    }
+  }
 }
 
+.dropdown__button {
+  position: relative;
+  font-size: 1.5rem;
 
-//&__button:hover {}
+
+}
