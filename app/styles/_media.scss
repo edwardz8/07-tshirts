@@ -28,9 +28,20 @@
 }
 
 .shop-card__info {
+      display: flex;
 
   &__title {}
   &__description {}
   &__options {}
 }
+}
+
+.button-bar {
+      display: flex;
+
+      //&__button {}
+}
+
+.dropdown__button , .dropdown__list {
+  display: flex;
 }
