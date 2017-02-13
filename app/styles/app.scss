@@ -106,10 +106,10 @@ $c-pink: #e577aa;
   margin: 0;
   padding: 1rem;
 
-&--green {color: $c-green;}
-&--pink {color: $c-pink;}
-&--blue {color: $c-blue;}
-&--yellow {color: $c-yellow;}
+  &--green {color: $c-green;}
+  &--pink {color: $c-pink;}
+  &--blue {color: $c-blue;}
+  &--yellow {color: $c-yellow;}
 
   :hover {font-size: 2rem;}
 }
