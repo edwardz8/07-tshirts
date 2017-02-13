@@ -2,14 +2,29 @@
 
 @media (min-width: 500px) and (max-width: 770px) {
 
+
   .grid {
     flex-direction: column;
+    border: 0;
+
+    /*&__item {
+      padding: 1rem;
+      flex-basis: calc(100% / 3 - 2rem - 2rem);
+      display: flex;
+      flex-grow: 1;
+      flex-direction: row;
+    }*/
   }
+
 
   .shop-card {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
+    &__pic {
+      width: 33%;
+    }
 }
 
 .shop-card__info {
@@ -18,6 +33,4 @@
   &__description {}
   &__options {}
 }
-
-&__pic {}
 }

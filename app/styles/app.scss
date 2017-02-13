@@ -23,7 +23,6 @@ $c-pink: #e577aa;
     padding: 1rem;
     flex-basis: calc(100% / 3 - 2rem - 2rem);
     display: flex;
-    flex-grow: 1;
     flex-direction: row;
   }
 }
@@ -32,9 +31,11 @@ $c-pink: #e577aa;
   border: solid 2px $c-blue;
   position: relative;
   flex-wrap: wrap;
+  margin: 0;
 
   &__pic {
     position: relative;
+    margin: 0;
 
   }
 
