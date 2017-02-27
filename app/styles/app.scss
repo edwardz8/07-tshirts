@@ -29,18 +29,15 @@ $c-pink: #e577aa;
 
 .shop-card {
   border: solid 2px $c-blue;
-  position: relative;
   flex-wrap: wrap;
   margin: 0;
 
   &__pic {
-    position: relative;
     margin: 0;
 
   }
 
   &__info {
-    position: relative;
   }
 
   &__description, &__title {
@@ -50,14 +47,14 @@ $c-pink: #e577aa;
   }
 
   &__options {
-    position: relative;
+    //position: relative;
     justify-content: row;
   }
 }
 
 .button-bar {
   display: flex;
-  flex-direction: row;
+  // flex-direction: row;
   border-top: 0.15rem solid $c-blue;
 
   &__button {
@@ -112,7 +109,7 @@ $c-pink: #e577aa;
   &--blue {color: $c-blue;}
   &--yellow {color: $c-yellow;}
 
-  :hover {font-size: 2rem;}
+  :hover {font-size: 1.5rem;}
 }
 
 .size {
@@ -122,6 +119,3 @@ $c-pink: #e577aa;
 }
 
 .dropdown:hover .dropdown__list {display: flex;}
-
-
-//@import 'mobile';
