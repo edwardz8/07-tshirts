@@ -1,0 +1,103 @@
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+
+  &__item {
+    padding: 1rem;
+    flex-basis: calc(100% / 3 - 2rem - 2rem);
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.shop-card {
+  border: solid 2px $c-blue;
+  flex-wrap: wrap;
+  margin: 0;
+
+  &__pic {
+    margin: 0;
+
+  }
+
+  &__info {
+  }
+
+  &__description, &__title {
+    text-align: center;
+    color: $c-babyblue;
+    position: relative;
+  }
+
+  &__options {
+    justify-content: row;
+  }
+}
+
+.button-bar {
+  display: flex;
+  border-top: 0.15rem solid $c-blue;
+
+  &__button {
+    flex-grow: 1;
+    border: 0;
+    background: none;
+    color: $c-babyblue;
+
+    &:hover {
+    background: $c-blue;
+    }
+  }
+
+  > * + * {
+    border-left: 0.15rem solid $c-blue;
+  }
+}
+
+
+.dropdown {
+  position: relative;
+
+  &__list {
+    display: flex;
+    padding: 0;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    flex-direction: column;
+    border: 0.15rem solid $c-blue;
+    background: $c-white;
+    color: $c-blue;
+    transform: translate(-50%, 0);
+    margin: 0;
+
+    > * + * {
+    border-top: 0.15rem solid $c-babyblue;
+    }
+
+    display: none;
+  }
+}
+
+.dropdown__button {
+  position: relative;
+  font-size: 1rem;
+  margin: 0;
+  padding: 1rem;
+
+  &--green {color: $c-green;}
+  &--pink {color: $c-pink;}
+  &--blue {color: $c-blue;}
+  &--yellow {color: $c-yellow;}
+
+  :hover {font-size: 1.5rem;}
+}
+
+.size {
+  font-size: 1rem;
+  padding: 0;
+  margin: .1rem;
+}
+
+.dropdown:hover .dropdown__list {display: flex;}
