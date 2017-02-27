@@ -57,7 +57,7 @@ $c-pink: #e577aa;
 
 .button-bar {
   display: flex;
-  height: 2rem;
+  flex-direction: row;
   border-top: 0.15rem solid $c-blue;
 
   &__button {
