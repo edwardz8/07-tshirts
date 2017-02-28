@@ -1,0 +1,49 @@
+
+
+@media (min-width: 480px) and (max-width: 770px) {
+
+  .grid {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .shop-card {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    justify-content: space-between;
+
+    &__info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    &__pic {
+      width: 32%;
+    }
+
+    &__options {}
+}
+
+
+.button-bar {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      border-top: 0;
+}
+
+.dropdown {
+
+    .dropdown__list {
+        flex-direction: row;
+        right: 100%;
+        bottom: 50%;
+        left: auto;
+        transform: translate(0, 50%);
+      }
+
+    }
+}
